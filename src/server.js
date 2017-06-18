@@ -1,6 +1,6 @@
 const hapi = require('hapi');
 const server = new hapi.Server();
-
+const routes = require('./routes/index');
 const port = process.env.PORT || 3000;
 
 server.connection({
@@ -10,4 +10,5 @@ server.connection({
   },
 });
 
+server.route(routes);
 module.exports = server;
