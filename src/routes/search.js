@@ -3,10 +3,9 @@ module.exports = {
   method: 'POST',
   path: '/search',
   handler: (request, reply) => {
-    const { searchTerm } = JSON.parse(request.payload);
+    const { searchTerm } = request.payload;
     getSearchMovies(searchTerm, (err, res) => {
-      if (err)
-        return reply({ error: 'There was an error retrieving latest movies' });
+      if (err) reply({ error: 'There was an error retrieving latest movies' });
       reply(res);
     });
   },

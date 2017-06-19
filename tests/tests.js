@@ -17,3 +17,16 @@ test('/latest route', t => {
     t.end();
   });
 });
+
+test('/search route', t => {
+  const options = {
+    url: '/search',
+    method: 'POST',
+    payload: { searchTerm: 'wonder' },
+  };
+
+  server.inject(options, res => {
+    t.equal(res.statusCode, 200, 'statusCode should equal 200');
+    t.end();
+  });
+});
