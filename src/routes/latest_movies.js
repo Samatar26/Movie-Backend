@@ -1,4 +1,4 @@
-const getLatestMovies = require('./../helpers/latest_movies');
+const { getLatestMovies } = require('./../helpers/latest_movies');
 module.exports = {
   method: 'GET',
   path: '/latest',
@@ -7,7 +7,8 @@ module.exports = {
       .env.API_KEY}&language=en-US&page=1&region=GB
     `;
     getLatestMovies(latestMoviesUri, (err, res) => {
-      if (err) reply({ error: 'There was an error retrieving latest movies' });
+      if (err)
+        return reply({ error: 'There was an error retrieving latest movies' });
       reply(res);
     });
   },
