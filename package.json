@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "node src/start.js",
     "dev": "nodemon src/start.js",
     "test": "node tests/tests.js | tap-spec",
     "coverage": "istanbul cover tests/tests.js"
