@@ -20,7 +20,8 @@
   "homepage": "https://github.com/Samatar26/Movie-Backend#readme",
   "dependencies": {
     "env2": "^2.2.0",
-    "hapi": "^16.4.3"
+    "hapi": "^16.4.3",
+    "request": "^2.81.0"
   },
   "devDependencies": {
     "istanbul": "^0.4.5",
