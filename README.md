@@ -3,7 +3,7 @@
 [![codecov](https://codecov.io/gh/Samatar26/Movie-Backend/branch/master/graph/badge.svg)](https://codecov.io/gh/Samatar26/Movie-Backend)
 
 This is an app which shows users which movies are currently showing in theaters in the United Kingdom. It also allows users to search for movies using the movieDatabase.
-View it on http://movies-in-theathers.herokuapp.com
+View it on http://movies-in-theaters.herokuapp.com
 ### Tech Stack:
 - Ui: __react__
 - State-Management: __Redux__
